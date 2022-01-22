@@ -1,0 +1,113 @@
+:root {
+  --main-color: #2c666eff;
+  --rich-black: #07393cff;
+  --rich-black-true: #0a090cff;
+  --middle-blue: #90ddf0ff;
+  --white: rgb(240, 237, 238);
+  --background: rgba(240, 237, 238, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  outline: none;
+  padding: 0%;
+}
+
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--middle-blue),
+    var(--main-color)
+  );
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--rich-black-true);
+  font-size: 16px;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  background-color: var(--rich-black-true);
+  opacity: 0.12;
+  z-index: -1;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10em;
+  padding: 50px;
+}
+
+.container {
+  background: var(--background);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 1em);
+  min-height: calc(100vh - 20em);
+  box-shadow: 0 10px 30px var(--white);
+  border-radius: 1em;
+  padding: 2em;
+}
+
+header {
+  position: absolute;
+  top: -2em;
+  right: 1em;
+  left: 1em;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+  border-radius: 1em;
+  backdrop-filter: blur(1em);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+header > .logo {
+  text-decoration: none;
+  color: var(--rich-black);
+  font-weight: 700;
+  font-size: 2em;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  margin: 0, 2em;
+  padding-right: 10px;
+}
+header ul li a {
+  font-weight: 500;
+  color: var(--rich-black);
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 1em;
+}
+
+header ul li a:hover,
+header ul li a.active {
+  background: var(--white);
+  box-shadow: 1px 3px 4px var(--main-color);
+}
