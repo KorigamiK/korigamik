@@ -6,3 +6,25 @@
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.crane-img {
+  transform: rotateZ(-15deg);
+  margin-right: 3em;
+}
+
+.crane-img img {
+  max-width: 55vh;
+  animation: animate 3s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+  filter: sepia(1%) saturate(1%) hue-rotate(1deg) brightness(1000%)
+    contrast(80%);
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    transform: translateY(2em);
+  }
+  50% {
+    transform: translateY(3em);
+  }
+}

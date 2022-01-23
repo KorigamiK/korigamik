@@ -5,6 +5,9 @@
   --middle-blue: #90ddf0ff;
   --white: rgb(240, 237, 238);
   --background: rgba(240, 237, 238, 0.5);
+  --secondary-1: #f4a261;
+  --secondary-2: #e76f51;
+  --shadow: rgb(58, 136, 119, 0.2);
 }
 
 * {
@@ -52,8 +55,9 @@ section {
   padding: 50px;
   flex-direction: column;
 }
+
 .container:first-child {
-  margin-top: 5.5em;
+  margin-top: 3.5em;
   border-top: none;
 }
 
@@ -65,12 +69,12 @@ section {
   align-items: center;
   width: calc(100% - 1em);
   min-height: calc(100vh - 20em);
-  box-shadow: 0 10px 30px var(--white);
+  box-shadow: 0 0.3em 10px var(--main-color);
   border-radius: 1em;
   padding: 2em;
   margin-bottom: 3em;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-top: 1px solid rgba(240, 237, 238, 0.5);
+  border-left: 1px solid rgba(240, 237, 238, 0.5);
 }
 
 .bevel {
@@ -79,25 +83,35 @@ section {
 }
 
 header {
-  position: absolute;
-  top: 5em;
+  position: fixed;
+  top: 2.7em;
   right: 1em;
   left: 1em;
   padding: 1em 2em;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--background);
+  background-color: rgba(240, 237, 238, 0.6);
   border-radius: 1em;
-  backdrop-filter: blur(1em);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 1px solid rgba(240, 237, 238, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 header > .logo {
   text-decoration: none;
   color: var(--rich-black);
   font-weight: 700;
-  font-size: 2em;
+  padding-left: 2em;
+}
+
+.logo > p {
+  transition: 0.5s;
+  font-size: 3em;
+}
+
+.logo > p:hover {
+  transform: scale(1.5) rotateZ(360deg) translateY(0.1em);
 }
 
 header ul {
@@ -126,4 +140,43 @@ header ul li a.active {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   background: var(--white);
   box-shadow: 1px 2px 3px var(--main-color);
+}
+
+.glass {
+  box-shadow: 0 1.1em 3em var(--shadow);
+  border-radius: 1em;
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 1.5em;
+  width: 100%;
+  text-align: center;
+}
+
+.glass h2 {
+  font-size: 3em;
+  color: var(--rich-black);
+  text-align: center;
+  margin-bottom: 0.5em;
+  margin-top: 5px;
+}
+
+.glass a {
+  display: inline-block;
+  padding: 0.8em 2em;
+  background: var(--white);
+  color: var(--rich-black);
+  margin-top: 2em;
+  border-radius: 2em;
+  font-size: 1.2em;
+  font-weight: 500;
+  text-decoration: none;
+  box-shadow: 0 5px 10px var(--shadow);
+}
+.glass p {
+  text-align: left;
+}
+.start {
+  transform: translateX(-3em) translateY(1em);
+  max-width: 90em;
 }
