@@ -10,6 +10,10 @@
   --shadow: rgb(58, 136, 119, 0.2);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0%;
@@ -23,7 +27,7 @@
 }
 
 body {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   background-image: linear-gradient(
     to bottom right,
     var(--middle-blue),
@@ -34,7 +38,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--rich-black-true);
   font-size: 16px;
-  overflow-x: hidden;
+  overflow-x: auto;
   -webkit-tap-highlight-color: transparent;
 }
 
@@ -43,7 +47,6 @@ body::before {
   position: fixed;
   background-color: var(--rich-black-true);
   opacity: 0.12;
-  z-index: -1;
 }
 
 section {
@@ -67,7 +70,7 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 1em);
+  width: calc(100% - 4em);
   min-height: calc(100vh - 20em);
   box-shadow: 0 0.3em 10px var(--main-color);
   border-radius: 1em;
@@ -96,6 +99,7 @@ header {
   border: 1px solid rgba(240, 237, 238, 0.25);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
+  /* z-index: 1; */
 }
 
 header > .logo {
@@ -132,6 +136,7 @@ header ul li a {
   border-radius: 1em;
   border-top: 1px solid rgba(0, 0, 0, 0);
   border-left: 1px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 header ul li a:hover,
@@ -177,6 +182,6 @@ header ul li a.active {
   text-align: left;
 }
 .start {
-  transform: translateX(-3em) translateY(1em);
+  transform: translateX(-5em) translateY(1em);
   max-width: 90em;
 }

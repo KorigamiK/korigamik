@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: calc(100%);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .start {
+    height: auto;
+    transform: none;
+  }
+  header {
+    flex-direction: column;
+    width: calc(100% - 2em);
+    top: 1em;
+    right: 1em;
+    left: 1em;
+    justify-self: center;
+  }
+  header > .logo {
+    padding-left: none;
+  }
+  header ul {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  header > ul > li {
+    margin-top: 1em;
+  }
+  .container {
+    flex-direction: column;
+    padding-top: 4em;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .glass h2 {
+    font-size: 2em;
+  }
+}
