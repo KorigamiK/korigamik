@@ -50,6 +50,11 @@ section {
   min-height: 100vh;
   padding: 10em;
   padding: 50px;
+  flex-direction: column;
+}
+.container:first-child {
+  margin-top: 5.5em;
+  border-top: none;
 }
 
 .container {
@@ -63,11 +68,19 @@ section {
   box-shadow: 0 10px 30px var(--white);
   border-radius: 1em;
   padding: 2em;
+  margin-bottom: 3em;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.bevel {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 header {
   position: absolute;
-  top: -2em;
+  top: 5em;
   right: 1em;
   left: 1em;
   padding: 1em 2em;
@@ -78,8 +91,6 @@ header {
   border-radius: 1em;
   backdrop-filter: blur(1em);
   border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 header > .logo {
@@ -95,19 +106,24 @@ header ul {
 
 header ul li {
   list-style: none;
-  margin: 0, 2em;
+  margin: 0 0.5em;
   padding-right: 10px;
 }
+
 header ul li a {
   font-weight: 500;
   color: var(--rich-black);
   text-decoration: none;
   padding: 8px 15px;
   border-radius: 1em;
+  border-top: 1px solid rgba(0, 0, 0, 0);
+  border-left: 1px solid rgba(0, 0, 0, 0);
 }
 
 header ul li a:hover,
 header ul li a.active {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
   background: var(--white);
-  box-shadow: 1px 3px 4px var(--main-color);
+  box-shadow: 1px 2px 3px var(--main-color);
 }

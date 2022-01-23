@@ -1,8 +1,13 @@
 import "./styles/root.css";
 import "./styles/style.css";
 
-const app = document.getElementById("app")!;
-
-// app.innerHTML = `
-//   <h1>This is magic!</h1>
-// `;
+document.querySelectorAll<HTMLElement>("header ul li a").forEach((e) => {
+  e.addEventListener("click", function () {
+    for (const other of this.parentElement?.parentElement?.querySelectorAll(
+      "a"
+    )!) {
+      other.classList.remove("active");
+    }
+    this.className = "active";
+  });
+});
