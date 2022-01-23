@@ -10,25 +10,25 @@ document.querySelectorAll("section > .container").forEach((e, idx) => {
   e.setAttribute("id", link_ids[idx]);
 });
 
-const selectSection = (thisis: HTMLElement, current: number) => {
-  if (current === active) {
+const selectSection = (current: number, firstTime = false) => {
+  if (!firstTime && current === active) {
     return;
   }
+  console.log("need", current);
+  document
+    .querySelector(`[goto="${link_ids[active]}"]`)!
+    .classList.remove("active");
   active = current;
-  for (const other of thisis.parentElement?.parentElement?.querySelectorAll(
-    "a"
-  )!) {
-    other.classList.remove("active");
-  }
-  thisis.className = "active";
+  document.querySelector(`[goto="${link_ids[active]}"]`)!.className = "active";
 };
 
 document.querySelectorAll<HTMLElement>("header ul li a").forEach((e, idx) => {
   e.addEventListener("click", function () {
-    selectSection(this, idx);
     document.getElementById(this.getAttribute("goto")!)?.scrollIntoView();
+    selectSection(idx);
   });
   e.setAttribute("goto", link_ids[idx]);
+  if (idx === 0) selectSection(0, true); // default tab
 });
 
 document.querySelectorAll("section > container").forEach((e, idx) => {
@@ -37,7 +37,7 @@ document.querySelectorAll("section > container").forEach((e, idx) => {
 
 const places: number[] = [];
 
-for (const i of link_ids.reverse()) {
+for (const i of link_ids) {
   places.push(document.getElementById(i)!.offsetTop - 230);
 }
 
@@ -46,12 +46,17 @@ console.log(places);
 window.onscroll = function () {
   const p = document.documentElement.scrollTop;
 
-  if (p > places[0])
-    selectSection(document.querySelector('[goto="contact"]')!, 3);
-  else if (p > places[1])
-    selectSection(document.querySelector('[goto="projects"]')!, 2);
-  else if (p > places[2])
-    selectSection(document.querySelector('[goto="about"]')!, 1);
-  else if (p > places[3])
-    selectSection(document.querySelector('[goto="home"]')!, 0);
+  if (p > places[3]) {
+    selectSection(3);
+    return;
+  } else if (p > places[2]) {
+    selectSection(2);
+    return;
+  } else if (p > places[1]) {
+    selectSection(1);
+    return;
+  } else if (p > places[0]) {
+    selectSection(0);
+    return;
+  }
 };

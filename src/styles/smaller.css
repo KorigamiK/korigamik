@@ -2,12 +2,17 @@
   .container {
     width: calc(100%);
   }
+  .start {
+    transform: none;
+  }
+  .logo {
+    padding-left: 0;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .start {
     height: auto;
-    transform: none;
   }
   header {
     flex-direction: column;
@@ -18,7 +23,7 @@
     justify-self: center;
   }
   header > .logo {
-    padding-left: none;
+    padding-left: 0;
   }
   header ul {
     justify-content: space-evenly;
@@ -35,6 +40,6 @@
 
 @media only screen and (max-width: 450px) {
   .glass h2 {
-    font-size: 2em;
+    font-size: 1.7em;
   }
 }
