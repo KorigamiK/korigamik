@@ -8,6 +8,8 @@
   --secondary-1: #f4a261;
   --secondary-2: #e76f51;
   --shadow: rgb(58, 136, 119, 0.2);
+  --dark-font: #0b132b;
+  --light-font: #2b4141;
 }
 
 html {
@@ -36,7 +38,7 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: var(--rich-black-true);
+  color: var(--dark-font);
   font-size: 16px;
   overflow-x: auto;
   -webkit-tap-highlight-color: transparent;
@@ -78,6 +80,10 @@ section {
   margin-bottom: 48px;
   border-top: 1px solid rgba(240, 237, 238, 0.5);
   border-left: 1px solid rgba(240, 237, 238, 0.5);
+}
+
+.container a {
+  cursor: pointer;
 }
 
 .bevel {
@@ -156,13 +162,12 @@ header ul li a.active {
   backdrop-filter: blur(5px);
   padding: 24px;
   width: 100%;
-  text-align: center;
+  margin-bottom: 25px;
 }
 
 .glass h2 {
   font-size: 3em;
   color: var(--rich-black);
-  text-align: center;
   margin-bottom: 8px;
   margin-top: 5px;
 }
@@ -172,7 +177,7 @@ header ul li a.active {
   padding: 13px 32px;
   background: var(--white);
   color: var(--rich-black);
-  margin-top: 32px;
+  margin-top: 25px;
   border-radius: 32px;
   font-size: 1.2em;
   font-weight: 500;
@@ -181,8 +186,10 @@ header ul li a.active {
 }
 .glass p {
   text-align: left;
+  font-size: 1.5em;
 }
 .start {
-  transform: translateX(-80px) translateY(20px);
+  padding-left: 50px;
+  transform: translateX(-70px) translateY(20px);
   max-width: 1140px;
 }

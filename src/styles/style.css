@@ -28,3 +28,119 @@
     transform: translateY(48px);
   }
 }
+
+.typewriter::before {
+  content: "";
+  text-align: center;
+}
+
+.typewriter {
+  width: 10ch;
+  animation: typing 0.5s steps(18), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  font-family: monospace;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.full {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.progress-section {
+  display: grid;
+  gap: 1em;
+  grid-template-columns: 1fr;
+}
+
+.progress-section div {
+  display: flex;
+}
+
+.progress-section > div > p {
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding-left: 40px;
+  padding-top: 5px;
+  color: var(--light-font);
+}
+
+.hobbies-section > div > p {
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding-top: 5px;
+  color: var(--light-font);
+}
+
+.hobbies-section {
+  display: flex;
+  justify-content: center;
+}
+.hobbies-section > div {
+  margin-left: 20px;
+  justify-content: center;
+}
+
+[icon] {
+  opacity: 0.75;
+}
+
+progress {
+  display: inline-block;
+  width: attr(value) "%";
+  height: 10px;
+  padding: 0 0 0 0;
+  margin: 0;
+  background: none;
+  border: 0;
+  border-radius: 200px;
+  text-align: left;
+  position: relative;
+  opacity: 0.7;
+}
+
+.social {
+  display: grid;
+  width: 100%;
+  overflow: hidden;
+  gap: 3em;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.social img {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card {
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: all 500ms;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.3);
+}

@@ -9,6 +9,9 @@
   .logo {
     padding-left: 0;
   }
+  .glass {
+    padding: 22px;
+  }
 }
 
 @media only screen and (max-width: 800px) {
