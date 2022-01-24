@@ -88,11 +88,17 @@
 
 .hobbies-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 .hobbies-section > div {
+  flex-direction: column;
   margin-left: 20px;
-  justify-content: center;
+}
+
+.hobbies-section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 [icon] {
@@ -101,7 +107,7 @@
 
 progress {
   display: inline-block;
-  width: attr(value) "%";
+  width: 100%;
   height: 10px;
   padding: 0 0 0 0;
   margin: 0;

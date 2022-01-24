@@ -2,82 +2,6 @@ import "./styles/root.css";
 import "./styles/style.css";
 import "./styles/smaller.css";
 
-const link_ids = ["home", "about", "projects", "contact"];
-
-let active = 0;
-
-document.querySelectorAll("section > .container").forEach((e, idx) => {
-  e.setAttribute("id", link_ids[idx]);
-});
-
-const selectSection = (current: number, firstTime = false) => {
-  if (!firstTime && current === active) {
-    return;
-  }
-  console.log("need", current);
-  document
-    .querySelector(`[goto="${link_ids[active]}"]`)!
-    .classList.remove("active");
-  active = current;
-  document.querySelector(`[goto="${link_ids[active]}"]`)!.className = "active";
-};
-
-document.querySelectorAll<HTMLElement>("header ul li a").forEach((e, idx) => {
-  e.addEventListener("click", function () {
-    document.getElementById(this.getAttribute("goto")!)?.scrollIntoView();
-    selectSection(idx);
-  });
-  e.setAttribute("goto", link_ids[idx]);
-  if (idx === 0) selectSection(0, true); // default tab
-});
-
-document.querySelectorAll("section > container").forEach((e, idx) => {
-  e.setAttribute("id", link_ids[idx]);
-});
-
-const places: number[] = [];
-
-for (const i of link_ids) {
-  places.push(document.getElementById(i)!.offsetTop - 230);
-}
-
-console.log(places);
-
-window.onscroll = function () {
-  const p = document.documentElement.scrollTop;
-
-  if (p > places[3]) {
-    selectSection(3);
-    return;
-  } else if (p > places[2]) {
-    selectSection(2);
-    return;
-  } else if (p > places[1]) {
-    selectSection(1);
-    return;
-  } else if (p > places[0]) {
-    selectSection(0);
-    return;
-  }
-};
-
-const createIcon = (e: Element) => {
-  e.setAttribute(
-    "src",
-    `https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/${e.getAttribute(
-      "icon"
-    )}.svg`
-  );
-  e.setAttribute("alt", e.getAttribute("icon")!);
-  e.setAttribute("align", "center");
-  if (e.getAttribute("link")) {
-    (e as HTMLElement).onclick = () =>
-      (window.location.href = e.getAttribute("link")!);
-  }
-};
-
-document.querySelectorAll("[icon]").forEach(createIcon);
-
 interface Iskills {
   name: string;
   value: number;
@@ -122,6 +46,23 @@ const skills: Iskills[] = [
   },
 ];
 
+const createIcon = (e: Element) => {
+  e.setAttribute(
+    "src",
+    `https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/${e.getAttribute(
+      "icon"
+    )}.svg`
+  );
+  e.setAttribute("alt", e.getAttribute("icon")!);
+  e.setAttribute("align", "center");
+  if (e.getAttribute("link")) {
+    (e as HTMLElement).onclick = () =>
+      (window.location.href = e.getAttribute("link")!);
+  }
+};
+
+document.querySelectorAll("[icon]").forEach(createIcon);
+
 const progressSection = document.querySelector(".progress-section")!;
 
 for (const skill of skills) {
@@ -140,3 +81,60 @@ for (const skill of skills) {
   progressbar.setAttribute("value", skill.value.toString());
   progressSection.appendChild(progressbar);
 }
+
+const link_ids = ["home", "about", "projects", "contact"];
+
+let active = 0;
+
+document.querySelectorAll("section > .container").forEach((e, idx) => {
+  e.setAttribute("id", link_ids[idx]);
+});
+
+const selectSection = (current: number, firstTime = false) => {
+  if (!firstTime && current === active) {
+    return;
+  }
+  console.log("need", current);
+  document
+    .querySelector(`[goto="${link_ids[active]}"]`)!
+    .classList.remove("active");
+  active = current;
+  document.querySelector(`[goto="${link_ids[active]}"]`)!.className = "active";
+};
+
+document.querySelectorAll<HTMLElement>("header ul li a").forEach((e, idx) => {
+  e.addEventListener("click", function () {
+    document.getElementById(this.getAttribute("goto")!)?.scrollIntoView();
+    selectSection(idx);
+  });
+  e.setAttribute("goto", link_ids[idx]);
+  if (idx === 0) selectSection(0, true); // default tab
+});
+
+document.querySelectorAll("section > container").forEach((e, idx) => {
+  e.setAttribute("id", link_ids[idx]);
+});
+
+const places: number[] = [];
+
+for (const i of link_ids) {
+  places.push(document.getElementById(i)!.offsetTop - 230);
+}
+
+window.onscroll = function () {
+  const p = document.documentElement.scrollTop;
+
+  if (p > places[3]) {
+    selectSection(3);
+    return;
+  } else if (p > places[2]) {
+    selectSection(2);
+    return;
+  } else if (p > places[1]) {
+    selectSection(1);
+    return;
+  } else if (p > places[0]) {
+    selectSection(0);
+    return;
+  }
+};
