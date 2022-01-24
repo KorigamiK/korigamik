@@ -55,13 +55,13 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 10em;
+  padding: 160px;
   padding: 50px;
   flex-direction: column;
 }
 
 .container:first-child {
-  margin-top: 3.5em;
+  margin-top: 56px;
   border-top: none;
 }
 
@@ -71,12 +71,12 @@ section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: calc(100% - 4em);
-  min-height: calc(100vh - 20em);
-  box-shadow: 0 0.3em 10px var(--main-color);
-  border-radius: 1em;
-  padding: 2em;
-  margin-bottom: 3em;
+  width: calc(100% - 64px);
+  min-height: calc(100vh - 200px);
+  box-shadow: 0 5px 10px var(--main-color);
+  border-radius: 16px;
+  padding: 32px;
+  margin-bottom: 48px;
   border-top: 1px solid rgba(240, 237, 238, 0.5);
   border-left: 1px solid rgba(240, 237, 238, 0.5);
 }
@@ -88,15 +88,15 @@ section {
 
 header {
   position: fixed;
-  top: 2.7em;
-  right: 1em;
-  left: 1em;
-  padding: 1em 2em;
+  top: 43px;
+  right: 16px;
+  left: 16px;
+  padding: 16px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: rgba(240, 237, 238, 0.6);
-  border-radius: 1em;
+  border-radius: 16px;
   border: 1px solid rgba(240, 237, 238, 0.25);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
@@ -107,7 +107,7 @@ header > .logo {
   text-decoration: none;
   color: var(--rich-black);
   font-weight: 700;
-  padding-left: 2em;
+  padding-left: 32px;
 }
 
 .logo > p {
@@ -116,7 +116,7 @@ header > .logo {
 }
 
 .logo > p:hover {
-  transform: scale(1.5) rotateZ(360deg) translateY(0.1em);
+  transform: scale(1.5) rotateZ(360deg) translateY(5px);
 }
 
 header ul {
@@ -125,9 +125,9 @@ header ul {
 
 header ul li {
   list-style: none;
-  margin: 0 0.5em;
+  margin: 0 8px;
   padding-right: 10px;
-  min-width: 6em;
+  min-width: 96px;
   text-align: center;
 }
 
@@ -151,12 +151,12 @@ header ul li a.active {
 }
 
 .glass {
-  box-shadow: 0 1.1em 3em var(--shadow);
-  border-radius: 1em;
+  box-shadow: 0 18px 48px var(--shadow);
+  border-radius: 16px;
   background-color: rgba(0, 0, 0, 0.1);
   -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
-  padding: 1.5em;
+  padding: 24px;
   width: 100%;
   text-align: center;
 }
@@ -165,17 +165,17 @@ header ul li a.active {
   font-size: 3em;
   color: var(--rich-black);
   text-align: center;
-  margin-bottom: 0.5em;
+  margin-bottom: 8px;
   margin-top: 5px;
 }
 
 .glass a {
   display: inline-block;
-  padding: 0.8em 2em;
+  padding: 13px 32px;
   background: var(--white);
   color: var(--rich-black);
-  margin-top: 2em;
-  border-radius: 2em;
+  margin-top: 32px;
+  border-radius: 32px;
   font-size: 1.2em;
   font-weight: 500;
   text-decoration: none;
@@ -185,6 +185,6 @@ header ul li a.active {
   text-align: left;
 }
 .start {
-  transform: translateX(-5em) translateY(1em);
-  max-width: 90em;
+  transform: translateX(-80px) translateY(20px);
+  max-width: 1140px;
 }

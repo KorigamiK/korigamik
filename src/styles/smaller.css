@@ -16,10 +16,10 @@
   }
   header {
     flex-direction: column;
-    width: calc(100% - 2em);
-    top: 1em;
-    right: 1em;
-    left: 1em;
+    width: calc(100% - 32px);
+    top: 16px;
+    right: 16px;
+    left: 16px;
     justify-self: center;
   }
   header > .logo {
@@ -30,11 +30,11 @@
     flex-wrap: wrap;
   }
   header > ul > li {
-    margin-top: 1em;
+    margin-top: 16px;
   }
   .container {
     flex-direction: column;
-    padding-top: 4em;
+    padding-top: 64px;
   }
 }
 

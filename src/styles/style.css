@@ -9,7 +9,7 @@
 
 .crane-img {
   transform: rotateZ(-15deg);
-  margin-right: 3em;
+  margin-right: 48px;
 }
 
 .crane-img img {
@@ -22,9 +22,9 @@
 @keyframes animate {
   0%,
   100% {
-    transform: translateY(2em);
+    transform: translateY(32px);
   }
   50% {
-    transform: translateY(3em);
+    transform: translateY(48px);
   }
 }
