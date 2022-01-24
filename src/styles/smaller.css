@@ -36,10 +36,16 @@
     flex-direction: column;
     padding-top: 64px;
   }
+  section {
+    padding: 25px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
   .glass h2 {
     font-size: 1.7em;
+  }
+  section {
+    padding: 0;
   }
 }

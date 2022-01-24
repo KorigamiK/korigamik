@@ -45,9 +45,9 @@ body {
 
 body::before {
   content: "";
-  position: fixed;
+  /* position: fixed;
   background-color: var(--rich-black-true);
-  opacity: 0.12;
+  opacity: 0.12; */
 }
 
 section {
@@ -55,7 +55,6 @@ section {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 160px;
   padding: 50px;
   flex-direction: column;
 }
