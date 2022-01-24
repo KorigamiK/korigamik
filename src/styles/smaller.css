@@ -53,4 +53,7 @@
   .container:first-child {
     margin-top: 200px;
   }
+  .crane-img img {
+    max-width: 45vh;
+  }
 }
