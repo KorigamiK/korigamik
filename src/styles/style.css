@@ -8,6 +8,8 @@
 }
 
 .crane-img {
+  overflow: overlay;
+  position: static;
   transform: rotateZ(-15deg);
   margin-right: 48px;
 }
