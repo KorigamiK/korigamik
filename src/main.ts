@@ -61,80 +61,85 @@ const createIcon = (e: Element) => {
   }
 };
 
-document.querySelectorAll("[icon]").forEach(createIcon);
+const init = () => {
+  document.querySelectorAll("[icon]").forEach(createIcon);
 
-const progressSection = document.querySelector(".progress-section")!;
+  const progressSection = document.querySelector(".progress-section")!;
 
-for (const skill of skills) {
-  const img = document.createElement("img");
-  const p = document.createElement("p");
-  img.setAttribute("icon", skill.svg ? skill.svg : skill.name.toLowerCase());
-  img.setAttribute("width", "40");
-  createIcon(img);
-  p.innerText = skill.name;
-  const div = document.createElement("div");
-  div.appendChild(img);
-  div.appendChild(p);
-  progressSection.appendChild(div);
-  const progressbar = document.createElement("progress");
-  progressbar.setAttribute("max", "100");
-  progressbar.setAttribute("value", skill.value.toString());
-  progressSection.appendChild(progressbar);
-}
-
-const link_ids = ["home", "about", "projects", "contact"];
-
-let active = 0;
-
-document.querySelectorAll("section > .container").forEach((e, idx) => {
-  e.setAttribute("id", link_ids[idx]);
-});
-
-const selectSection = (current: number, firstTime = false) => {
-  if (!firstTime && current === active) {
-    return;
+  for (const skill of skills) {
+    const img = document.createElement("img");
+    const p = document.createElement("p");
+    img.setAttribute("icon", skill.svg ? skill.svg : skill.name.toLowerCase());
+    img.setAttribute("width", "40");
+    createIcon(img);
+    p.innerText = skill.name;
+    const div = document.createElement("div");
+    div.appendChild(img);
+    div.appendChild(p);
+    progressSection.appendChild(div);
+    const progressbar = document.createElement("progress");
+    progressbar.setAttribute("max", "100");
+    progressbar.setAttribute("value", skill.value.toString());
+    progressSection.appendChild(progressbar);
   }
-  console.log("need", current);
-  document
-    .querySelector(`[goto="${link_ids[active]}"]`)!
-    .classList.remove("active");
-  active = current;
-  document.querySelector(`[goto="${link_ids[active]}"]`)!.className = "active";
-};
 
-document.querySelectorAll<HTMLElement>("header ul li a").forEach((e, idx) => {
-  e.addEventListener("click", function () {
-    document.getElementById(this.getAttribute("goto")!)?.scrollIntoView();
-    selectSection(idx);
+  const link_ids = ["home", "about", "projects", "contact"];
+
+  let active = 0;
+
+  document.querySelectorAll("section > .container").forEach((e, idx) => {
+    e.setAttribute("id", link_ids[idx]);
   });
-  e.setAttribute("goto", link_ids[idx]);
-  if (idx === 0) selectSection(0, true); // default tab
-});
 
-document.querySelectorAll("section > container").forEach((e, idx) => {
-  e.setAttribute("id", link_ids[idx]);
-});
+  const selectSection = (current: number, firstTime = false) => {
+    if (!firstTime && current === active) {
+      return;
+    }
+    console.log("need", current);
+    document
+      .querySelector(`[goto="${link_ids[active]}"]`)!
+      .classList.remove("active");
+    active = current;
+    document.querySelector(`[goto="${link_ids[active]}"]`)!.className =
+      "active";
+  };
 
-const places: number[] = [];
+  document.querySelectorAll<HTMLElement>("header ul li a").forEach((e, idx) => {
+    e.addEventListener("click", function () {
+      document.getElementById(this.getAttribute("goto")!)?.scrollIntoView();
+      selectSection(idx);
+    });
+    e.setAttribute("goto", link_ids[idx]);
+    if (idx === 0) selectSection(0, true); // default tab
+  });
 
-for (const i of link_ids) {
-  places.push(document.getElementById(i)!.offsetTop - 230);
-}
+  document.querySelectorAll("section > container").forEach((e, idx) => {
+    e.setAttribute("id", link_ids[idx]);
+  });
 
-window.onscroll = function () {
-  const p = document.documentElement.scrollTop;
+  const places: number[] = [];
 
-  if (p > places[3]) {
-    selectSection(3);
-    return;
-  } else if (p > places[2]) {
-    selectSection(2);
-    return;
-  } else if (p > places[1]) {
-    selectSection(1);
-    return;
-  } else if (p > places[0]) {
-    selectSection(0);
-    return;
+  for (const i of link_ids) {
+    places.push(document.getElementById(i)!.offsetTop - 230);
   }
+
+  window.onscroll = function () {
+    const p = document.documentElement.scrollTop;
+
+    if (p > places[3]) {
+      selectSection(3);
+      return;
+    } else if (p > places[2]) {
+      selectSection(2);
+      return;
+    } else if (p > places[1]) {
+      selectSection(1);
+      return;
+    } else if (p > places[0]) {
+      selectSection(0);
+      return;
+    }
+  };
 };
+
+document.addEventListener("readystatechange", init);
