@@ -93,10 +93,6 @@
   justify-content: space-around;
   margin-top: 40px;
 }
-.hobbies-section > div {
-  flex-direction: column;
-  margin-left: 20px;
-}
 
 .hobbies-section img {
   display: block;
@@ -141,8 +137,8 @@ progress {
 
 .card {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  width: calc(25%);
+  text-align: center;
   border-radius: 4px;
   transition: all 500ms;
   overflow: hidden;
