@@ -88,7 +88,10 @@
 
 .hobbies-section {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
   justify-content: space-around;
+  margin-top: 40px;
 }
 .hobbies-section > div {
   flex-direction: column;
@@ -120,11 +123,11 @@ progress {
 }
 
 .social {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   overflow: hidden;
-  gap: 3em;
-  grid-template-columns: 1fr 1fr;
+  gap: 4em;
   justify-content: center;
   align-items: center;
   padding-top: 20px;
@@ -137,11 +140,9 @@ progress {
 }
 
 .card {
-  overflow: hidden;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 4px;
   transition: all 500ms;
   overflow: hidden;

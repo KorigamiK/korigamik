@@ -1,7 +1,6 @@
 @media only screen and (max-width: 1000px) {
   .container {
     width: calc(100%);
-    overflow: hidden;
   }
   .start {
     transform: none;
@@ -52,6 +51,9 @@
   }
   section {
     padding: 0;
+  }
+  .container {
+    overflow: hidden;
   }
   .container:first-child {
     margin-top: 200px;

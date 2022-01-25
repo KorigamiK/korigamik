@@ -95,7 +95,6 @@ const init = () => {
     if (!firstTime && current === active) {
       return;
     }
-    console.log("need", current);
     document
       .querySelector(`[goto="${link_ids[active]}"]`)!
       .classList.remove("active");

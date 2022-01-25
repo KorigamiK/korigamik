@@ -73,7 +73,7 @@ section {
   justify-content: space-between;
   align-items: center;
   width: calc(100% - 64px);
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 250px);
   box-shadow: 0 5px 10px var(--main-color);
   border-radius: 16px;
   padding: 32px;
