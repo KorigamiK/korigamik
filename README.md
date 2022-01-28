@@ -22,8 +22,8 @@ Here are some ideas to get you started:
 -->
 
 ### Recent projects :computer:
-[![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=mangu&theme=dark&hide_border=true)](https://github.com/korigamik/mangu)
+[![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=mangu&theme=dark&hide_border=false)](https://github.com/korigamik/mangu)
 
-[![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=media-tools&theme=dark&hide_border=true)](https://github.com/korigamik/media-tools)
+[![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=media-tools&theme=dark&hide_border=false)](https://github.com/korigamik/media-tools)
 
-[![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=kickassanime-downloader&theme=dark&hide_border=true)](https://github.com/korigamik/kickassanime-downloader)
+[![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=kickassanime-downloader&theme=dark&hide_border=false)](https://github.com/korigamik/kickassanime-downloader)
