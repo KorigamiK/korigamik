@@ -57,7 +57,7 @@ const createIcon = (e: Element) => {
   e.setAttribute("align", "center");
   if (e.getAttribute("link")) {
     (e as HTMLElement).onclick = () =>
-      (window.location.href = e.getAttribute("link")!);
+      window.open(e.getAttribute("link")!, "_blank");
   }
 };
 
