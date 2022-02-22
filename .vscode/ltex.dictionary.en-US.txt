@@ -7,3 +7,4 @@ img
 instagram
 facebook
 gmail
+mailto
