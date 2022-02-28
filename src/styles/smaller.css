@@ -17,31 +17,47 @@
   .start {
     height: auto;
   }
+  #home {
+    margin-top: 20px;
+  }
   header {
-    flex-direction: column;
+    flex-direction: row;
     width: calc(100% - 32px);
     justify-self: center;
     top: 20px;
+    top: auto;
+    bottom: 10px;
   }
   header > .logo {
     padding-left: 0;
+    transform: translateY(5px);
   }
   header ul {
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
+    flex-direction: row;
   }
   header > ul > li {
-    margin-top: 16px;
+    margin: 8px 0 0 30px;
+    min-width: auto;
+    font-size: 2em;
+    padding-right: 0;
+  }
+  header > ul > li > a {
+    padding-top: 16px;
+  }
+  header > ul > li > a > span {
+    display: none;
   }
   .container {
     flex-direction: column;
     padding-top: 64px;
   }
+  .container:last-child {
+    margin-bottom: 90px;
+  }
   section {
     padding: 25px;
-  }
-  header ul li {
-    min-width: none;
   }
 }
 
@@ -60,5 +76,12 @@
   }
   .crane-img img {
     max-width: 45vh;
+  }
+
+  div.card > img {
+    width: 70px;
+  }
+  header > ul > li {
+    margin: 8px 0 0 0;
   }
 }
