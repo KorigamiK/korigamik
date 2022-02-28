@@ -49,9 +49,9 @@ const skills: Iskills[] = [
 const createIcon = (e: Element) => {
   e.setAttribute(
     "src",
-    `https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/${e.getAttribute(
-      "icon"
-    )}.svg`
+    `https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/${e
+      .getAttribute("icon")
+      ?.toLowerCase()}.svg`
   );
   e.setAttribute("alt", e.getAttribute("icon")!);
   e.setAttribute("align", "center");
