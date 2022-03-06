@@ -83,7 +83,7 @@ const init = () => {
     progressSection.appendChild(progressbar);
   }
 
-  const link_ids = ["home", "about", "projects", "contact"];
+  const link_ids = ["home", "about", "blog", "projects", "contact"];
 
   let active = 0;
 
@@ -124,8 +124,10 @@ const init = () => {
 
   window.onscroll = function () {
     const p = document.documentElement.scrollTop;
-
-    if (p > places[3]) {
+    if (p > places[4]) {
+      selectSection(4);
+      return;
+    } else if (p > places[3]) {
       selectSection(3);
       return;
     } else if (p > places[2]) {

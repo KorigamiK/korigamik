@@ -8,9 +8,6 @@
   .logo {
     padding-left: 0;
   }
-  .glass {
-    padding: 22px;
-  }
 }
 
 @media only screen and (max-width: 800px) {
@@ -61,7 +58,10 @@
   }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 448px) {
+  .glass {
+    padding: 22px;
+  }
   .glass h2 {
     font-size: 1.7em;
   }
@@ -82,7 +82,14 @@
     width: 70px;
   }
   header > ul > li {
-    margin: 0px 0 0 0;
-    font-size: 1em;
+    margin: 0 0 0 0;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header > ul > li > a {
+    padding-top: 8px;
   }
 }
