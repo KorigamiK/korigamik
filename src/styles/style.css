@@ -65,6 +65,7 @@
   display: grid;
   gap: 1em;
   grid-template-columns: 1fr;
+  margin-top: 20px;
 }
 
 .progress-section div {

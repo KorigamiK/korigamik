@@ -127,7 +127,7 @@ header > .logo {
 }
 
 .logo > p:hover {
-  transform: scale(1.5) rotateZ(360deg) translateY(5px);
+  transform: scale(1.5) rotateZ(360deg) translateY(0);
 }
 
 header ul {

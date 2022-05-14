@@ -30,13 +30,13 @@
     transform: translateY(5px);
   }
   header ul {
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
   }
   header > ul > li {
-    margin: 8px 0 0 30px;
-    min-width: auto;
+    /* margin: 8px 0 0 30px; */
+    /* min-width: auto; */
     font-size: 2em;
     padding-right: 0;
   }
