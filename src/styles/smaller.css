@@ -2,9 +2,11 @@
   .container {
     width: calc(100%);
   }
+
   .start {
     transform: none;
   }
+
   .logo {
     padding-left: 0;
   }
@@ -14,9 +16,11 @@
   .start {
     height: auto;
   }
+
   #home {
     margin-top: 20px;
   }
+
   header {
     flex-direction: row;
     width: calc(100% - 32px);
@@ -25,34 +29,42 @@
     top: auto;
     bottom: 10px;
   }
+
   header > .logo {
     padding-left: 0;
     transform: translateY(5px);
   }
+
   header ul {
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
   }
+
   header > ul > li {
     /* margin: 8px 0 0 30px; */
-    /* min-width: auto; */
+    min-width: auto;
     font-size: 2em;
     padding-right: 0;
   }
+
   header > ul > li > a {
     padding-top: 8px;
   }
+
   header > ul > li > a > span {
     display: none;
   }
+
   .container {
     flex-direction: column;
     padding-top: 64px;
   }
+
   .container:last-child {
     margin-bottom: 90px;
   }
+
   section {
     padding: 25px;
   }
@@ -62,18 +74,24 @@
   .glass {
     padding: 22px;
   }
+
   .glass h2 {
     font-size: 1.7em;
+    padding-top: 0;
   }
+
   section {
     padding: 0;
   }
+
   .container {
     overflow: hidden;
   }
+
   .container:first-child {
     margin-top: 200px;
   }
+
   .crane-img img {
     max-width: 45vh;
   }
@@ -81,6 +99,7 @@
   div.card > img {
     width: 70px;
   }
+
   header > ul > li {
     margin: 0 0 0 0;
     font-size: 1em;
@@ -88,9 +107,11 @@
     justify-content: center;
     align-items: center;
   }
+
   .logo {
     display: none;
   }
+
   header > ul {
     flex: auto;
   }
