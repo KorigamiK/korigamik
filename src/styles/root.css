@@ -140,6 +140,7 @@ header ul li {
   padding-right: 10px;
   min-width: 96px;
   text-align: center;
+  min-width: auto;
 }
 
 header ul li a {
