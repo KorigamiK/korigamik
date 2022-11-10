@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-**Find out more about me at [My website!](https://korigamik.github.io/korigamik/)**
+**Find out more about me at [My website!](https://korigamik.ml/)**
 
 [![arindas' github stats](https://github-readme-stats-chi-tan.vercel.app/api?username=korigamik&include_all_commits=true&show_icons=true&hide_title=true&hide_border=true&theme=dark)](https://github.com/korigamik)
 
