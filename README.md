@@ -1,6 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=KorigamiK&animation=fadeIn&fontAlignY=38&desc=My%20code%20be%20with%20you!&descAlignY=55&descAlign=61)
 
-# Hi there 👋
+# Hi there 👋 
+![Viewer](https://komarev.com/ghpvc/?username=korigamik&color=green)
 
 - **Check out my [website](https://korigamik.github.io/korigamik/)**
 
