@@ -27,10 +27,9 @@ Head on over to my [**Open Source Society**](https://github.com/ossnsut/) page!
 
 
 ### Recent projects 🖥
-
-|                                                                                                                                                                                                |                                                                                                                                                                                     |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+                                                                                                                                                                                                                                                                                                                                                               
 | [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=mangu&theme=dark&hide_border=false)](https://github.com/korigamik/mangu)                       | [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=CSE-Works&theme=dark&hide_border=false)](https://github.com/korigamik/CSE-Works)    |
+| --- | ---|
 | [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=free-guitar-tabs&theme=dark&hide_border=false)](https://github.com/korigamik/free-guitar-tabs) | [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=UntitledPSP&theme=dark&hide_border=false)](https://github.com/korigmik/UntitledPSP) |
 
 <p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&text=&color=auto&height=200&section=footer&fontSize=90" alt="Thanks"/></p>
