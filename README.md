@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=KorigamiK&animation=fadeIn&fontAlignY=38&desc=My%20code%20be%20with%20you!&descAlignY=55&descAlign=61)
+<p align="middle"> <img src ="https://capsule-render.vercel.app/api?type=waving&color=auto&height=200&section=header&text=KorigamiK&animation=fadeIn&fontAlignY=38&desc=My%20code%20be%20with%20you!&descAlignY=55&descAlign=61" alt="Header" /> </p>
 
 # Hi there 👋 
 ![Viewer](https://komarev.com/ghpvc/?username=korigamik&color=green)
@@ -13,7 +13,7 @@
 
 Head on over to my [**Open Source Society**](https://github.com/ossnsut/) page!
 
-<p align="center">
+<p align="middle">
 	<img src="https://skillicons.dev/icons?i=linux,neovim,latex,cpp,ts,python,nodejs,deno,rust,go,git,regex" />
 </p>
 
@@ -30,6 +30,6 @@ Head on over to my [**Open Source Society**](https://github.com/ossnsut/) page!
                                                                                                                                                                                                                                                                                                                                                                
 | [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=mangu&theme=dark&hide_border=false)](https://github.com/korigamik/mangu)                       | [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=CSE-Works&theme=dark&hide_border=false)](https://github.com/korigamik/CSE-Works)    |
 | --- | ---|
-| [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=free-guitar-tabs&theme=dark&hide_border=false)](https://github.com/korigamik/free-guitar-tabs) | [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=UntitledPSP&theme=dark&hide_border=false)](https://github.com/korigmik/UntitledPSP) |
+| [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=free-guitar-tabs&theme=dark&hide_border=false)](https://github.com/korigamik/free-guitar-tabs) | [![Readme Card](https://github-readme-stats-chi-tan.vercel.app/api/pin/?username=korigamik&repo=UntitledPSP&theme=dark&hide_border=false)](https://github.com/KorigamiK/UntitledPSP)|
 
-<p align="center"><img src="https://capsule-render.vercel.app/api?type=waving&text=&color=auto&height=200&section=footer&fontSize=90" alt="Thanks"/></p>
+<p align="middle"><img src="https://capsule-render.vercel.app/api?type=waving&text=&color=auto&height=200&section=footer&fontSize=90" alt="Thanks"/></p>
