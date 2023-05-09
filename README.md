@@ -14,7 +14,7 @@
 Head on over to my [**Open Source Society**](https://github.com/ossnsut/) page!
 
 <p align="middle">
-	<img src="https://skillicons.dev/icons?i=linux,neovim,latex,cpp,ts,python,nodejs,deno,rust,go,git,regex" />
+	<img src="https://skillicons.dev/icons?i=linux,neovim,latex,haskell,cpp,ts,python,nodejs,deno,rust,go,git,regex" />
 </p>
 
 ## Stats 📈
