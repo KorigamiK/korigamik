@@ -2,7 +2,7 @@
 
 echo "Enter Commit Mesage: "
 read x
-yarn build
-git add dist -f 
+pnpm build
+git add dist -f
 git commit -m "${x}"
-git subtree push --prefix dist origin gh-pages
+git subtree push --prefix dist origin pages

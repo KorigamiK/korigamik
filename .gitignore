@@ -3,3 +3,5 @@ node_modules
 dist
 dist-ssr
 *.local
+pnpm-lock.json
+pnpm-lock.yaml
