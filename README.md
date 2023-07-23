@@ -5,7 +5,7 @@
 
 - **Check out my [website](https://korigamik.github.io)**
 
-- **Read my [✨ blogs! ✨](https://astro-blog-1hk.pages.dev/)**
+- **Read my [✨ blogs! ✨](https://korigamik.zc.al/)**
 
 - 📫 Reach me on **[discord](https://discord.com/users/600005860227547157/)**
 
