@@ -1,7 +1,0 @@
-{
-  "search.exclude": {
-    "**/node_modules": true
-  },
-  "editor.formatOnSave": true,
-  "git.enableCommitSigning": true
-}
