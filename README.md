@@ -3,7 +3,7 @@
 # Hi there 👋 
 ![Viewer](https://komarev.com/ghpvc/?username=korigamik&color=green)
 
-- **Check out my [website](https://korigamik.github.io)**
+- **Check out my [website](https://korigamik.is-a.dev)**
 
 - **Read my [✨ blogs! ✨](https://korigamik.zc.al/)**
 
