@@ -3,9 +3,9 @@
 # Hi there 👋 
 ![Viewer](https://komarev.com/ghpvc/?username=korigamik&color=green)
 
-- **Check out my [website](https://korigamik.is-a.dev)**
+- **The old website [korigamik.is-a.dev](https://korigamik.is-a.dev)**
 
-- **Read my [✨ blogs! ✨](https://korigamik.zc.al/)**
+- **Read my ✨ blogs! ✨ [korigamik.zc.al](https://korigamik.zc.al)**
 
 - 📫 Reach me on **[discord](https://discord.com/users/600005860227547157/)**
 
