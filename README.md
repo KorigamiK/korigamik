@@ -4,9 +4,9 @@
 
 ![Viewer](https://komarev.com/ghpvc/?username=korigamik&color=green)
 
-- **The old website [korigamik.is-a.dev](https://korigamik.is-a.dev)**
+- **The old website [korigamik.is-a.dev/old](https://korigamik.is-a.dev/old)**
 
-- **Read my ✨ blogs! ✨ [korigamik.zc.al](https://korigamik.zc.al)**
+- **Read my ✨ blogs! ✨ [korigamik.zc.al](https://korigamik.is-a.dev)**
 
 - 📫 Reach me on **[discord](https://discord.com/users/600005860227547157/)**
 
@@ -15,7 +15,7 @@
 Head on over to my [**Open Source Society**](https://github.com/ossnsut/) page!
 
 <p align="middle">
-	<img src="https://skillicons.dev/icons?i=linux,neovim,latex,haskell,cpp,ts,python,nodejs,deno,rust,go,git,regex" />
+	<img src="https://skillicons.dev/icons?i=linux,neovim,latex,haskell,cpp,ts,python,kotlin,nodejs,deno,rust,go,git,regex" />
 </p>
 
 ## Stats 📈
