@@ -4,7 +4,7 @@
 
 ![Viewer](https://komarev.com/ghpvc/?username=korigamik&color=green)
 
-- **The old website [korigamik.is-a.dev/old](https://korigamik.is-a.dev/old)**
+- **The old website [korigamik.is-a.dev/me](https://korigamik.is-a.dev/me)**
 
 - **Read my ✨ blogs! ✨ [korigamik.zc.al](https://korigamik.is-a.dev)**
 
