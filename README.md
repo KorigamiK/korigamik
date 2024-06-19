@@ -6,7 +6,7 @@
 
 - **The old website [korigamik.is-a.dev/me](https://korigamik.is-a.dev/me)**
 
-- **Read my ✨ blogs! ✨ [korigamik.zc.al](https://korigamik.is-a.dev)**
+- **Read my ✨ blogs! ✨ [korigamik.dev.ar](https://korigamik.dev.ar)**
 
 - 📫 Reach me on **[discord](https://discord.com/users/600005860227547157/)**
 
