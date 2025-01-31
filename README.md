@@ -11,7 +11,7 @@ heya, 👋
 - Reach me on [discord](https://discord.com/users/600005860227547157/)
 
 
-you may wanna contact me if you can't from th [OSSN](https://github.com/ossnsut/) page
+you may wanna contact me if you came from the [OSSN](https://github.com/ossnsut/) page
 
 <p align="middle">
 	<img src="https://skillicons.dev/icons?i=linux,neovim,latex,haskell,cpp,ts,python,kotlin,nodejs,deno,rust,go,git,regex" />
