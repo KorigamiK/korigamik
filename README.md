@@ -6,8 +6,6 @@ heya, 👋
 
 - read the blogs - [korigamik.dev](https://korigamik.dev)
 
-- for old times -  [old.korigamik.dev](https://old.korigamik.dev)
-
 - reach me on -  [discord](https://discord.com/users/600005860227547157/)
 
 
