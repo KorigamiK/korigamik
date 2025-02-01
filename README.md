@@ -4,11 +4,11 @@ heya, 👋
 ![Viewer](https://komarev.com/ghpvc/?username=korigamik&color=green)
 
 
-- Read the blogs - [korigamik.dev](https://korigamik.dev)
+- read the blogs - [korigamik.dev](https://korigamik.dev)
 
-- for old times sake [old.korigamik.dev](https://old.korigamik.dev)
+- for old times -  [old.korigamik.dev](https://old.korigamik.dev)
 
-- Reach me on [discord](https://discord.com/users/600005860227547157/)
+- reach me on -  [discord](https://discord.com/users/600005860227547157/)
 
 
 you may wanna contact me if you came from the [OSSN](https://github.com/ossnsut/) page
