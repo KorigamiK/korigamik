@@ -9,7 +9,7 @@ heya, 👋
 - reach me on -  [discord](https://discord.com/users/600005860227547157/)
 
 
-you may wanna contact me if you came from the [OSSN](https://github.com/ossnsut/) page
+you may wanna contact me if you came from [ossn's](https://github.com/ossnsut/) page
 
 cool stats
 
